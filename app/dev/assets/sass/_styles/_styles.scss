@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/*
+STYLES
+------------------------------------------------*/
+
+html, body{
+  height: 100%;
+}
+
+.people{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  &__dance{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    clip-path: polygon(25% 25%, 75% 25%, 75% 50%, 25% 50%);
+    &.-dance01{
+      top: -25%;
+      left: -12.5%;
+      animation-name: dance01;
+      background: rgb(193, 201, 208);
+    }
+    &.-dance02{
+      top: -25%;
+      left: 12.5%;
+      animation-name: dance02;
+      background: rgb(241, 241, 243);
+    }
+    &.-dance03{
+      top: -25%;
+      left: 37.5%;
+      animation-name: dance03;
+      background: rgb(225, 231, 238);
+    }
+    &.-dance04{
+      top: -25%;
+      left: 62.5%;
+      animation-name: dance04;
+      background: rgb(241, 246, 249);
+    }
+    &.-dance05{
+      top: 0%;
+      left: -12.5%;
+      animation-name: dance05;
+      background: rgb(238, 237, 238);
+    }
+    &.-dance06{
+      top: 0%;
+      left: 12.5%;
+      animation-name: dance06;
+      background: rgb(212, 212, 219);
+    }
+    &.-dance07{
+      top: 0%;
+      left: 37.5%;
+      animation-name: dance07;
+      background: rgb(236, 234, 232);
+    }
+    &.-dance08{
+      top: 0%;
+      left: 62.5%;
+      animation-name: dance08;
+      background: rgb(175, 176, 179);
+    }
+    &.-dance09{
+      top: 25%;
+      left: -12.5%;
+      animation-name: dance09;
+      background: rgb(216, 219, 225);
+    }
+    &.-dance10{
+      top: 25%;
+      left: 12.5%;
+      animation-name: dance10;
+      background: rgb(239, 238, 240);
+    }
+    &.-you{
+      top: 25%;
+      left: 37.5%;
+      animation-name: you;
+      background: rgb(187, 63, 32);
+    }
+    &.-dance12{
+      top: 25%;
+      left: 62.5%;
+      animation-name: dance12;
+      background: rgb(192, 200, 207);
+    }
+    &.-dance13{
+      top: 50%;
+      left: -12.5%;
+      animation-name: dance13;
+      background: rgb(223, 223, 221);
+    }
+    &.-dance14{
+      top: 50%;
+      left: 12.5%;
+      animation-name: dance14;
+      background: rgb(202, 201, 203);
+    }
+    &.-dance15{
+      top: 50%;
+      left: 37.5%;
+      animation-name: dance15;
+      background: rgb(154, 164, 175);
+    }
+    &.-dance16{
+      top: 50%;
+      left: 62.5%;
+      animation-name: dance16;
+      background: rgb(213, 214, 217);
+    }
+  }
+}
+
+
+
+@keyframes dance01 {
+  25% {
+    clip-path: polygon(25% 25%, 73% 25%, 77% 52%, 25% 48%);
+  }
+  50% {
+    clip-path: polygon(25% 25%, 77% 25%, 73% 48%, 25% 52%);
+  }
+  75% {
+    clip-path: polygon(25% 25%, 73% 25%, 73% 48%, 25% 50%);
+  }
+}
+
+@keyframes dance02 {
+  25% {
+    clip-path: polygon(23% 25%, 77% 25%, 77% 48%, 27% 52%);
+  }
+  50% {
+    clip-path: polygon(27% 25%, 73% 25%, 73% 52%, 23% 48%);
+  }
+  75% {
+    clip-path: polygon(23% 25%, 77% 25%, 77% 48%, 23% 48%);
+  }
+}
+
+@keyframes dance03 {
+  25% {
+    clip-path: polygon(27% 25%, 77% 25%, 73% 52%, 27% 48%);
+  }
+  50% {
+    clip-path: polygon(23% 25%, 73% 25%, 77% 48%, 23% 52%);
+  }
+  75% {
+    clip-path: polygon(23% 25%, 77% 25%, 77% 48%, 27% 48%);
+  }
+}
+
+@keyframes dance04 {
+  25% {
+    clip-path: polygon(27% 25%, 75% 25%, 75% 48%, 23% 52%);
+  }
+  50% {
+    clip-path: polygon(23% 25%, 75% 25%, 75% 52%, 27% 48%);
+  }
+  75% {
+    clip-path: polygon(27% 25%, 75% 25%, 75% 50%, 27% 50%);
+  }
+}
+
+@keyframes dance05 {
+  25% {
+    clip-path: polygon(25% 23%, 77% 27%, 73% 48%, 25% 50%);
+  }
+  50% {
+    clip-path: polygon(25% 27%, 73% 23%, 77% 52%, 25% 50%);
+  }
+  75% {
+    clip-path: polygon(25% 25%, 73% 23%, 73% 50%, 25% 50%);
+  }
+}
+
+@keyframes dance06 {
+  25% {
+    clip-path: polygon(27% 27%, 77% 23%, 73% 50%, 23% 48%);
+  }
+  50% {
+    clip-path: polygon(23% 23%, 73% 27%, 77% 48%, 27% 52%);
+  }
+  75% {
+    clip-path: polygon(23% 23%, 77% 23%, 77% 50%, 23% 50%);
+  }
+}
+
+@keyframes dance07 {
+  25% {
+    clip-path: polygon(27% 23%, 73% 27%, 77% 48%, 23% 50%);
+  }
+  50% {
+    clip-path: polygon(23% 27%, 77% 23%, 73% 50%, 27% 48%);
+  }
+  75% {
+    clip-path: polygon(27% 23%, 77% 23%, 75% 50%, 27% 50%);
+  }
+}
+
+@keyframes dance08 {
+  25% {
+    clip-path: polygon(23% 27%, 75% 23%, 75% 50%, 27% 48%);
+  }
+  50% {
+    clip-path: polygon(27% 23%, 75% 27%, 75% 50%, 23% 50%);
+  }
+  75% {
+    clip-path: polygon(27% 23%, 75% 25%, 75% 50%, 25% 50%);
+  }
+}
+
+@keyframes dance09 {
+  25% {
+    clip-path: polygon(25% 25%, 73% 23%, 77% 52%, 25% 48%);
+  }
+  50% {
+    clip-path: polygon(25% 25%, 77% 25%, 73% 48%, 25% 52%);
+  }
+  75% {
+    clip-path: polygon(25% 25%, 73% 25%, 73% 48%, 25% 50%);
+  }
+}
+
+@keyframes dance10 {
+  25% {
+    clip-path: polygon(23% 23%, 73% 25%, 77% 48%, 27% 52%);
+  }
+  50% {
+    clip-path: polygon(27% 25%, 77% 23%, 73% 52%, 23% 48%);
+  }
+  75% {
+    clip-path: polygon(23% 25%, 77% 25%, 77% 48%, 23% 48%);
+  }
+}
+
+@keyframes you {
+  25% {
+    clip-path: polygon(23% 25%, 77% 23%, 73% 52%, 27% 48%);
+  }
+  50% {
+    clip-path: polygon(27% 23%, 73% 25%, 77% 48%, 23% 52%);
+  }
+  75% {
+    clip-path: polygon(27% 25%, 75% 25%, 77% 50%, 27% 48%);
+  }
+}
+
+@keyframes dance12 {
+  25% {
+    clip-path: polygon(27% 23%, 75% 25%, 75% 48%, 23% 52%);
+  }
+  50% {
+    clip-path: polygon(23% 25%, 75% 25%, 75% 52%, 27% 48%);
+  }
+  75% {
+    clip-path: polygon(25% 25%, 75% 25%, 75% 50%, 27% 50%);
+  }
+}
+
+@keyframes dance13 {
+  25% {
+    clip-path: polygon(25% 23%, 77% 27%, 73% 50%, 25% 50%);
+  }
+  50% {
+    clip-path: polygon(25% 27%, 73% 23%, 77% 52%, 25% 50%);
+  }
+  75% {
+    clip-path: polygon(25% 25%, 73% 23%, 73% 50%, 25% 50%);
+  }
+}
+
+@keyframes dance14 {
+  25% {
+    clip-path: polygon(27% 27%, 77% 23%, 73% 50%, 23% 50%);
+  }
+  50% {
+    clip-path: polygon(23% 23%, 73% 27%, 77% 50%, 27% 52%);
+  }
+  75% {
+    clip-path: polygon(23% 23%, 77% 23%, 77% 50%, 23% 50%);
+  }
+}
+
+@keyframes dance15 {
+  25% {
+    clip-path: polygon(27% 23%, 73% 27%, 77% 50%, 23% 50%);
+  }
+  50% {
+    clip-path: polygon(23% 27%, 77% 23%, 73% 50%, 27% 50%);
+  }
+  75% {
+    clip-path: polygon(27% 23%, 77% 23%, 75% 50%, 27% 50%);
+  }
+}
+
+@keyframes dance16 {
+  25% {
+    clip-path: polygon(23% 27%, 75% 23%, 75% 50%, 27% 50%);
+  }
+  50% {
+    clip-path: polygon(27% 23%, 75% 27%, 75% 50%, 23% 50%);
+  }
+  75% {
+    clip-path: polygon(27% 23%, 75% 25%, 75% 50%, 25% 50%);
+  }
+}
